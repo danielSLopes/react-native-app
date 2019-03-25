@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
+
 import {
   Image,
   Platform,
@@ -29,10 +30,11 @@ export default class LoginScreen extends Component {
       placeholderUsuario: 'Usuário',
       placeholderSenha: 'Senha'
     };
+
   }
 
   render() {
-    
+    const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <Image source={require('../assets/images/dom-pedro-logo-inv.png')} style={styles.logo} />
